@@ -1,0 +1,9 @@
+/* 버튼 공통 css */
+#wrap main .advertise .more_btn,
+#wrap main .best_sellers .show_btn,
+#wrap main .content1 .right_info .buy_btn {
+    border: 1px solid #a3a3a3;
+    padding: 6px 15px; display: inline-block;
+    width: max-content; margin: 0 auto;
+    color: #1D1D1D; font-weight: 300; font-size: 0.88rem;
+}
