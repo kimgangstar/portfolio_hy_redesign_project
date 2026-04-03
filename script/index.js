@@ -7,7 +7,7 @@ const inside = document.querySelector('.inside_wrap');
 console.log(heroBnr,best,advertise,solution,inside);
 
 const heroSwiper = new Swiper (heroBnr,{
-    pagination:{
+/*     pagination:{
         el:'.hero_bnr .pg',
         type:'fraction',
         renderFraction:function(current,total){
@@ -17,6 +17,9 @@ const heroSwiper = new Swiper (heroBnr,{
             customPg +=`<span class=${total}></span>`;
             return customPg;
         }
+    }, */
+    scrollbar:{
+        el:'.hero_bnr .pg',
     },
     navigation:{
         nextEl:'.hero_bnr .next',

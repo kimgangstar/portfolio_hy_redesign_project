@@ -1,0 +1,74 @@
+#wrap {}
+#wrap header {}
+#wrap header .gnb .menu li a {color: #000;}
+#wrap main  {}
+#wrap main .title {text-align: center; padding-top: 80px;}
+#wrap main .title h1 {
+    font-size: 2.06rem; font-weight: 400; 
+    margin-bottom: 10px;
+}
+#wrap main .title p  {
+    font-size: 1.1rem; font-weight: 300;
+    margin-bottom: 60px;
+}
+/* ----------------------------------------------------컨테이너1 시작----------------------------------------------------------------------- */
+#wrap main .best_container {
+    width: 1920px; display: flex; flex-flow: row nowrap;
+    padding: 0 0 140px;
+}
+#wrap main .best_container .best_left {
+    display: flex; flex-flow: row nowrap; justify-content: center; align-items: centers; 
+}
+#wrap main .best_container .best_left .left1 
+{display: flex; flex-flow: column; justify-content: center;
+}
+#wrap main .best_container .best_left .left1 .more_items {
+    padding: 0 37px;
+}
+#wrap main .best_container .best_left .left1 .more_items li {
+    width: 180px; height: 180px;
+    border: 1px solid #e6e6e6; text-align: center; margin-bottom: 20px;
+    border-radius: 2px;
+}
+#wrap main .best_container .best_left .left1 .more_items li:last-child {margin-bottom: 0;}
+#wrap main .best_container .best_left .left1 .more_items li a {}
+#wrap main .best_container .best_left .left1 .more_items li a img {
+    height: 100%;
+}
+#wrap main .best_container .best_left .left2 {
+    text-align: center;
+    padding: 0 147px ;
+    display: flex; flex-flow: column nowrap; justify-content: center;
+}
+#wrap main .best_container .best_left .left2 h1 {
+    font-size: 1.75rem; margin-bottom: 10px;
+}
+#wrap main .best_container .best_left .left2 p {
+    font-size: 1.13rem; font-weight: 300; color: #515151; margin-bottom: 6px;
+}
+#wrap main .best_container .best_left .left2 .view_item {width: 300px;}
+#wrap main .best_container .best_left .left2 .view_item .swiper-wrapper {}
+#wrap main .best_container .best_left .left2 .view_item .swiper-wrapper .swiper-slide {}
+#wrap main .best_container .best_left .left2 .view_item .swiper-wrapper .swiper-slide a {}
+#wrap main .best_container .best_left .left2 .view_item .swiper-wrapper .swiper-slide a img {width: 100%;}
+#wrap main .best_container .best_left .left2 .price {
+    font-size: 0.94rem; margin-bottom: 19px;
+}
+#wrap main .best_container .best_left .left2 .info {
+    font-size: 1.25rem; line-height: 1.7;
+    margin-bottom: 50px;
+}
+#wrap main .best_container .best_left .left2 .buy_btn {}
+#wrap main .best_container .best_left .prev {left: 30%;}
+#wrap main .best_container .best_left .next {}
+#wrap main .best_container .best_left .prev,
+#wrap main .best_container .best_left .next {}
+#wrap main .best_container .best_right_bg {}
+/* ----------------------------------------------------컨테이너1 끝----------------------------------------------------------------------- */
+/* ----------------------------------------------------컨테이너2 시작----------------------------------------------------------------------- */
+/* ----------------------------------------------------컨테이너2 끝----------------------------------------------------------------------- */
+/* ----------------------------------------------------컨테이너3 시작----------------------------------------------------------------------- */
+/* ----------------------------------------------------컨테이너3 끝----------------------------------------------------------------------- */
+/* ----------------------------------------------------컨테이너4 시작----------------------------------------------------------------------- */
+/* ----------------------------------------------------컨테이너4 끝----------------------------------------------------------------------- */
+#wrap footer  {}
