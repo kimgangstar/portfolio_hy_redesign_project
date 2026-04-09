@@ -68,6 +68,30 @@
 /* ----------------------------------------------------컨테이너2 시작----------------------------------------------------------------------- */
 /* ----------------------------------------------------컨테이너2 끝----------------------------------------------------------------------- */
 /* ----------------------------------------------------컨테이너3 시작----------------------------------------------------------------------- */
+#wrap main .container3 {text-align: center;}
+#wrap main .container3 .con3_content {}
+#wrap main .container3 .con3_content .swiper-wrapper {}
+#wrap main .container3 .con3_content .swiper-wrapper .swiper-slide {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box {
+    display: flex; flex-flow: row nowrap;
+}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .right_video {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .right_video .con3_video1 {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box .text {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box .text dt {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box .text dd {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box .item_img {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box .item_img img {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box p {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box h2 {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box .more_items {
+    display: flex; flex-flow: row nowrap; gap: 20px;
+}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box .more_items li {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box .more_items li a {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box .more_items li a img {}
+#wrap main .container3 .con3_content .swiper-wrapper .slide1  .container_box .left_box .buy_btn {}
 /* ----------------------------------------------------컨테이너3 끝----------------------------------------------------------------------- */
 /* ----------------------------------------------------컨테이너4 시작----------------------------------------------------------------------- */
 /* ----------------------------------------------------컨테이너4 끝----------------------------------------------------------------------- */
