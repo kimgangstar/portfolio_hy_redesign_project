@@ -3,8 +3,13 @@ const best = document.querySelector('.best_sellers .best');
 const advertise = document.querySelector('.advertise .advertise_bnr');
 const solution = document.querySelector('.solution_swiper');
 const inside = document.querySelector('.inside_wrap');
+const popular = document.querySelector('.popular_search');
+const header = document.querySelector('header');
+const search = document.querySelector('.function .search');
+const searchPopup = document.querySelector('.search_popup');
+const popupBack = document.querySelector('.search_popup .back');
 
-console.log(heroBnr,best,advertise,solution,inside);
+console.log(heroBnr,best,advertise,solution,inside,popular,header,search,searchPopup,popupBack);
 
 const heroSwiper = new Swiper (heroBnr,{
 /*     pagination:{
@@ -67,4 +72,34 @@ const insideSwiper = new Swiper(inside,{
     pagination:{
         el: ".bnr_container .swiper-pagination",
     },
+})
+
+const popularSwiper = new Swiper(popular,{
+    loop:true,
+    slidesPerView:4,
+    direction:'vertical',
+    autoplay:{delay:2000,},
+    spaceBetween:10,
+})
+
+search.addEventListener('click',function(e){
+    e.preventDefault();
+    searchPopup.style.display = 'flex';
+    header.style.backgroundColor = '#fff';
+    header.children[0].children[0].style.filter = 'invert(1)';
+    header.children[0].children[1].style.filter = 'invert(1)';
+    header.children[1].children[0].style.filter = 'invert(1)';
+    header.children[1].children[1].style.filter = 'invert(1)';
+    header.children[1].children[2].style.filter = 'invert(1)';
+})
+
+popupBack.addEventListener('click',function(e){
+    e.preventDefault();
+    searchPopup.style.display = 'none';
+    header.style.backgroundColor = 'transparent';
+    header.children[0].children[0].style.filter = 'invert(0)';
+    header.children[0].children[1].style.filter = 'invert(0)';
+    header.children[1].children[0].style.filter = 'invert(0)';
+    header.children[1].children[1].style.filter = 'invert(0)';
+    header.children[1].children[2].style.filter = 'invert(0)';
 })
