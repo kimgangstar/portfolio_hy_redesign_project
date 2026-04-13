@@ -8,10 +8,14 @@ const inside = document.querySelector('.inside_wrap');
 const popular = document.querySelector('.popular_search');
 const header = document.querySelector('header');
 const search = document.querySelector('.function .search');
-const searchPopup = document.querySelector('.search_popup');
+const searchPopup = document.querySelector('.popup_wrap');
 const popupBack = document.querySelector('.search_popup .back');
 
-console.log(heroBnr,best,advertise,solution,inside,popular,header,search,searchPopup,popupBack);
+// 제품 서브메뉴
+const subMenu = document.querySelector('.product_menu');
+const product = document.querySelector('.menu li');
+
+console.log(heroBnr,best,advertise,solution,inside,popular,header,search,searchPopup,popupBack,subMenu,product);
 
 const heroSwiper = new Swiper (heroBnr,{
 /*     pagination:{
@@ -91,9 +95,9 @@ search.addEventListener('click',function(e){
     header.style.backgroundColor = '#fff';
     header.children[0].children[0].style.filter = 'invert(1)';
     header.children[0].children[1].style.filter = 'invert(1)';
-    header.children[1].children[0].style.filter = 'invert(1)';
-    header.children[1].children[1].style.filter = 'invert(1)';
-    header.children[1].children[2].style.filter = 'invert(1)';
+    header.children[2].children[0].style.filter = 'invert(1)';
+    header.children[2].children[1].style.filter = 'invert(1)';
+    header.children[2].children[2].style.filter = 'invert(1)';
 })
 
 popupBack.addEventListener('click',function(e){
@@ -103,7 +107,31 @@ popupBack.addEventListener('click',function(e){
     header.style.backgroundColor = 'transparent';
     header.children[0].children[0].style.filter = 'invert(0)';
     header.children[0].children[1].style.filter = 'invert(0)';
-    header.children[1].children[0].style.filter = 'invert(0)';
-    header.children[1].children[1].style.filter = 'invert(0)';
-    header.children[1].children[2].style.filter = 'invert(0)';
+    header.children[2].children[0].style.filter = 'invert(0)';
+    header.children[2].children[1].style.filter = 'invert(0)';
+    header.children[2].children[2].style.filter = 'invert(0)';
+})
+
+product.addEventListener('mouseenter',function(e){
+    e.preventDefault();
+    subMenu.style.display = 'block';
+    header.style.borderBottom = '1px solid #eee';
+    header.style.backgroundColor = '#fff';
+    header.children[0].children[0].style.filter = 'invert(1)';
+    header.children[0].children[1].style.filter = 'invert(1)';
+    header.children[2].children[0].style.filter = 'invert(1)';
+    header.children[2].children[1].style.filter = 'invert(1)';
+    header.children[2].children[2].style.filter = 'invert(1)';
+})
+
+product.addEventListener('mouseleave',function(e){
+    e.preventDefault();
+    subMenu.style.display = 'none';
+    header.style.backgroundColor = 'transparent';
+    header.style.borderBottom = 'none';
+    header.children[0].children[0].style.filter = 'invert(0)';
+    header.children[0].children[1].style.filter = 'invert(0)';
+    header.children[2].children[0].style.filter = 'invert(0)';
+    header.children[2].children[1].style.filter = 'invert(0)';
+    header.children[2].children[2].style.filter = 'invert(0)';
 })
