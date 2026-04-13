@@ -3,6 +3,8 @@ const best = document.querySelector('.best_sellers .best');
 const advertise = document.querySelector('.advertise .advertise_bnr');
 const solution = document.querySelector('.solution_swiper');
 const inside = document.querySelector('.inside_wrap');
+
+// 검색창
 const popular = document.querySelector('.popular_search');
 const header = document.querySelector('header');
 const search = document.querySelector('.function .search');
@@ -85,6 +87,7 @@ const popularSwiper = new Swiper(popular,{
 search.addEventListener('click',function(e){
     e.preventDefault();
     searchPopup.style.display = 'flex';
+    header.style.borderBottom = '1px solid #eee';
     header.style.backgroundColor = '#fff';
     header.children[0].children[0].style.filter = 'invert(1)';
     header.children[0].children[1].style.filter = 'invert(1)';
@@ -95,6 +98,7 @@ search.addEventListener('click',function(e){
 
 popupBack.addEventListener('click',function(e){
     e.preventDefault();
+    header.style.borderBottom = 'none';
     searchPopup.style.display = 'none';
     header.style.backgroundColor = 'transparent';
     header.children[0].children[0].style.filter = 'invert(0)';

@@ -17,7 +17,7 @@
     padding: 0 0 140px;
 }
 #wrap main .best_container .best_left {
-    display: flex; flex-flow: row nowrap; justify-content: center; align-items: centers; 
+    display: flex; flex-flow: row nowrap; justify-content: center; align-items: center; 
 }
 #wrap main .best_container .best_left .left1 
 {display: flex; flex-flow: column; justify-content: center;
