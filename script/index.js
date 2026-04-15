@@ -5,6 +5,7 @@ const solution = document.querySelector('.solution_swiper');
 const inside = document.querySelector('.inside_wrap');
 
 // 검색창
+const search_wrap = document.querySelector('.search_popup');
 const popular = document.querySelector('.popular_search');
 const header = document.querySelector('header');
 const search = document.querySelector('.function .search');
@@ -15,7 +16,7 @@ const popupBack = document.querySelector('.search_popup .back');
 const subMenu = document.querySelector('.product_menu');
 const product = document.querySelector('.menu li');
 
-console.log(heroBnr,best,advertise,solution,inside,popular,header,search,searchPopup,popupBack,subMenu,product);
+console.log(heroBnr,best,advertise,solution,inside,popular,header,search,searchPopup,popupBack,subMenu,product,search_wrap);
 
 const heroSwiper = new Swiper (heroBnr,{
 /*     pagination:{
@@ -90,7 +91,7 @@ const popularSwiper = new Swiper(popular,{
 
 search.addEventListener('click',function(e){
     e.preventDefault();
-    searchPopup.style.display = 'flex';
+    search_wrap.style.display = 'flex';
     header.style.borderBottom = '1px solid #eee';
     header.style.backgroundColor = '#fff';
     header.children[0].children[0].style.filter = 'invert(1)';
@@ -103,7 +104,7 @@ search.addEventListener('click',function(e){
 popupBack.addEventListener('click',function(e){
     e.preventDefault();
     header.style.borderBottom = 'none';
-    searchPopup.style.display = 'none';
+    search_wrap.style.display = 'none';
     header.style.backgroundColor = 'transparent';
     header.children[0].children[0].style.filter = 'invert(0)';
     header.children[0].children[1].style.filter = 'invert(0)';

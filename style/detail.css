@@ -1,0 +1,134 @@
+#wrap header {
+    background-color: #fff; border-bottom: 1px solid #D3D3D3; 
+}
+#wrap header #gnb {filter: invert(1);}
+#wrap header .function {filter: invert(1);}
+
+/* -------------------------------------main------------------------ */
+#wrap {}
+#wrap main {}
+#wrap main .description_item {
+    display: flex; padding-top: 6px;
+}
+/* left------------------ */
+#wrap main .description_item .left_con {
+    width: 50%; height: 900px; padding-top: 63px;
+    display: flex; justify-content: center;
+}
+#wrap main .description_item .left_con .img1 {
+    width: 960px; height: 550px; display: block;
+}
+#wrap main .description_item .left_con .img1 img {width: 100%;}
+/* rignt------------------ */
+#wrap main .description_item .right_con {
+    width: 50%; height: 940px; padding-top: 63px;
+    background-color: #fff;
+    position: fixed; right: 0; border-left: 1px solid #D3D3D3;
+    display: flex; justify-content: center; align-items: center;
+}
+#wrap main .description_item .right_con .right_page {
+    display:flex; flex-flow: column nowrap;
+    width: 532px; 
+}
+#wrap main .description_item .right_con .right_page li {}
+#wrap main .description_item .right_con .right_page .discount_bar {
+display: flex; justify-content: flex-end;
+    border-top: 2px solid #000;
+}
+#wrap main .description_item .right_con .right_page .discount_bar p {
+    font-weight: 600; background-color: #000; color: #fff; 
+    display: inline; padding: 3px 10px;
+}
+#wrap main .description_item .right_con .right_page .item_name {}
+#wrap main .description_item .right_con .right_page .item_name h1 {
+    font-size: 1.31rem; margin-bottom: 10px;
+}
+#wrap main .description_item .right_con .right_page .item_name p {
+    font-size: 0.88rem; font-weight: 300; margin-bottom: 30px;
+}
+#wrap main .description_item .right_con .right_page .item_info {}
+#wrap main .description_item .right_con .right_page .item_info .consumer dd  {
+    color: #8F8F8F; text-decoration: line-through; font-size: 1.06rem;
+}
+#wrap main .description_item .right_con .right_page .item_info .selling_price dd {
+    font-size: 1.25rem; font-weight: 500;
+}
+#wrap main .description_item .right_con .right_page .item_info dl {
+    display: flex; flex-flow: row nowrap; align-items: center; margin-bottom: 20px;
+}
+#wrap main .description_item .right_con .right_page .item_info dl dt {
+    font-size: 0.88rem; width: 109px;
+}
+#wrap main .description_item .right_con .right_page .item_info dl dd {
+    font-size: 0.88rem;
+}
+#wrap main .description_item .right_con .right_page .selected_item {
+    background-color: #fff; display: flex; flex-flow: row nowrap; align-items: center;
+    justify-content: space-between; margin-bottom: 40px;
+}
+#wrap main .description_item .right_con .right_page .selected_item h2 {
+    font-size: 0.88rem; margin-right: -80px;
+}
+#wrap main .description_item .right_con .right_page .selected_item .output_container {
+    display: flex; flex-flow: row nowrap; padding: 10px 0 12px;
+    
+}
+#wrap main .description_item .right_con .right_page .selected_item .output_container #add {}
+#wrap main .description_item .right_con .right_page .selected_item .output_container .item_qty {}
+#wrap main .description_item .right_con .right_page .selected_item .output_container .item_qty #qty {
+    width: 50px; text-align: center;
+}
+#wrap main .description_item .right_con .right_page .selected_item .output_container #remove {}
+#wrap main .description_item .right_con .right_page .selected_item p {}
+#wrap main .description_item .right_con .right_page .total {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin-bottom: 26.5px;
+}
+#wrap main .description_item .right_con .right_page .total p {
+    font-size: 0.88rem; 
+}
+#wrap main .description_item .right_con .right_page .total .total_price {
+    display: flex; flex-flow: row nowrap; align-items: end;
+}
+#wrap main .description_item .right_con .right_page .total .total_price dt {}
+#wrap main .description_item .right_con .right_page .total .total_price dt span {
+    font-size: 1.5rem; font-weight: 500;
+}
+#wrap main .description_item .right_con .right_page .total .total_price dd {
+    font-size: 0.81rem; margin-left: 2px;
+}
+#wrap main .description_item .right_con .right_page .btn_box {
+    display: flex; flex-flow: row nowrap; border: 1px solid #606060;
+}
+#wrap main .description_item .right_con .right_page .btn_box button {
+    height: 50px;
+}
+#wrap main .description_item .right_con .right_page .btn_box .buy_btn {
+    background-color: #606060; color: #fff; 
+}
+#wrap main .description_item .right_con .right_page .btn_box .cart_btn {
+    background-color: #fff; color: #000000; font-weight: 500;
+}
+#wrap main .description_item .right_con .right_page .btn_box .buy_btn,
+#wrap main .description_item .right_con .right_page .btn_box .cart_btn {
+    width: 240px; font-weight: 600; 
+}
+#wrap main .description_item .right_con .right_page .btn_box .wish_btn {}
+#wrap main .description_item .right_con .right_page .btn_box .wish_btn img {width: 100%;}
+#wrap main .description_item .right_con .right_page .payment {
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;
+    padding: 20px 0;
+}
+#wrap main .description_item .right_con .right_page .payment p {
+    font-size: 0.88rem; color: #414141;
+}
+#wrap main .description_item .right_con .right_page .payment .pay_menu {
+    display: flex; flex-flow: row nowrap; gap: 10px;
+}
+#wrap main .description_item .right_con .right_page .payment .pay_menu a {
+    display: block; width: 74px; height: 44px;
+}
+#wrap main .description_item .right_con .right_page .payment .pay_menu .naverpay {}
+#wrap main .description_item .right_con .right_page .payment .pay_menu .naverpay img {width: 100%;}
+#wrap main .description_item .right_con .right_page .payment .pay_menu .kakaopay {}
+#wrap main .description_item .right_con .right_page .payment .pay_menu .kakaopay img {width: 100%;}
