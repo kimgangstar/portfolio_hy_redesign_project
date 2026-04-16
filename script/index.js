@@ -19,24 +19,15 @@ const product = document.querySelector('.menu li:nth-child(2)');
 console.log(heroBnr,best,advertise,solution,inside,popular,header,search,searchPopup,popupBack,subMenu,product,search_wrap);
 
 const heroSwiper = new Swiper (heroBnr,{
-/*     pagination:{
-        el:'.hero_bnr .pg',
-        type:'fraction',
-        renderFraction:function(current,total){
-            console.log(current,total)
-            let customPg =`<span class=${current}></span>`;
-            customPg += `<span> / </span>`;
-            customPg +=`<span class=${total}></span>`;
-            return customPg;
-        }
-    }, */
     scrollbar:{
-        el:'.hero_bnr .pg',
+        el:'.hero_bnr .bar',
     },
     navigation:{
         nextEl:'.hero_bnr .next',
     },
     loop:true,
+    autoplay:{delay:4000,},
+    speed:800,
 })
 
 const bestSwiper = new Swiper(best,{
@@ -115,6 +106,7 @@ popupBack.addEventListener('click',function(e){
 
 product.addEventListener('mouseenter',function(e){
     e.preventDefault();
+    search_wrap.style.display = 'none';
     subMenu.style.display = 'block';
     header.style.borderBottom = '1px solid #eee';
     header.style.backgroundColor = '#fff';

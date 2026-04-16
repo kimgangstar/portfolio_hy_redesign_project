@@ -14,12 +14,21 @@
 }
 /* ---------------------------------------1. hero bnr----------------------- */
 #wrap main .hero_bnr {
+/*     background-image: url(../images/common/hero_bnr1.jpg); height: 100vh; 
+    background-size: cover; background-position: center;
+    position: relative; */
+}
+#wrap main .hero_bnr .swiper-wrapper {}
+#wrap main .hero_bnr .swiper-wrapper .swiper-slide {}
+#wrap main .hero_bnr .swiper-wrapper .slide1 {
+    background-image: url(../images/common/hero_bnr1.jpg); height: 100vh; 
+    background-size: cover; background-position: center;
+    position: relative;
+}#wrap main .hero_bnr .swiper-wrapper .slide2 {
     background-image: url(../images/common/hero_bnr1.jpg); height: 100vh; 
     background-size: cover; background-position: center;
     position: relative;
 }
-#wrap main .hero_bnr .swiper-wrapper {}
-#wrap main .hero_bnr .swiper-wrapper .swiper-slide {}
 #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text {
     position: absolute; left: 100px; top: 330px;
 }
@@ -43,18 +52,10 @@
 }
 #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text  .go_shop {border-bottom: 1px solid #fff;}
 #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text  .go_shop img {}
-/* #wrap main .hero_bnr .pg {
-    position: absolute; width: 56px; height: 29px; background-color: #000; opacity: 40%; border-radius: 20px; 
-    left: 100px; bottom: 75px;
-}
-#wrap main .hero_bnr .pg span {
-    position: relative; top: 5px; 
-    color: #fff; font-weight: 600;
-} */
 #wrap main .hero_bnr .bar {
-    width: 500px; left: 50%; transform: translateX(-50%); bottom: 15px; height: 3px; background-color: #fff;
+    width: 500px; left: 50%; transform: translateX(-50%); bottom: 15px; height: 3px; background-color: transparent;
 }
-#wrap main .hero_bnr .swiper-scrollbar-drag {}
+#wrap main .hero_bnr .swiper-scrollbar-drag {background-color: #fff;}
 #wrap main .hero_bnr .next {}
 #wrap main .hero_bnr .next svg {color: #fff;}
 /* ---------------------------------------1. hero bnr----------------------- */
