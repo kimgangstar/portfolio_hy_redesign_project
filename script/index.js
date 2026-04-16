@@ -14,7 +14,7 @@ const popupBack = document.querySelector('.search_popup .back');
 
 // 제품 서브메뉴
 const subMenu = document.querySelector('.product_menu');
-const product = document.querySelector('.menu li');
+const product = document.querySelector('.menu li:nth-child(2)');
 
 console.log(heroBnr,best,advertise,solution,inside,popular,header,search,searchPopup,popupBack,subMenu,product,search_wrap);
 

@@ -12,18 +12,18 @@
 }
 /* left------------------ */
 #wrap main .description_item .left_con {
-    width: 50%; height: 900px; padding-top: 63px;
+    width: 50%; padding-top: 63px;
     display: flex; justify-content: center;
 }
 #wrap main .description_item .left_con .img1 {
-    width: 960px; height: 550px; display: block;
+    width: 960px; display: block;
 }
 #wrap main .description_item .left_con .img1 img {width: 100%;}
 /* rignt------------------ */
 #wrap main .description_item .right_con {
     width: 50%; height: 940px; padding-top: 63px;
     background-color: #fff;
-    position: fixed; right: 0; border-left: 1px solid #D3D3D3;
+    position: sticky; top: 0px; right: 0; border-left: 1px solid #D3D3D3;
     display: flex; justify-content: center; align-items: center;
 }
 #wrap main .description_item .right_con .right_page {
