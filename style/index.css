@@ -217,7 +217,7 @@
 #wrap main .advertise .advertise_bnr .swiper-wrapper .slide6 .text_box li:nth-child(1) p {background-color: #F3BB23;}
 /* ---------------------------------------4. advertise End----------------------- */
 /* ---------------------------------------5. solution Start----------------------- */
-#wrap main .Solution {text-align: center;  }
+#wrap main .Solution {text-align: center;}
 #wrap main .Solution h1 {
     font-size: 2.25rem; font-weight: 300;
     margin-bottom: 15px;
@@ -241,17 +241,27 @@
     padding: 8px 14px;
     font-size: 0.94rem; color: #242424;
 }
+#wrap main .Solution .type_box li a.active {
+    background-color: #333; transition: 0.25s; color: #fff;
+}
 #wrap main .Solution .solution_container {
     display: flex; flex-flow: row nowrap; padding: 50px 196px 30px; gap: 50px;
 }
+#wrap main .Solution .solution_container.pore {display: none;}
 #wrap main .Solution .solution_container .left_wrap {}
-#wrap main .Solution .solution_container .left_wrap .left_img {height: 573px; overflow: hidden;}
+#wrap main .Solution .solution_container .left_wrap .left_img {
+    width: 614px; height: 573px; overflow: hidden; 
+    border-radius: 1px;
+}
 #wrap main .Solution .solution_container .left_wrap .left_img img {width: 100%;}
 #wrap main .Solution .solution_container .right_wrap {
     display: flex; flex-flow: column nowrap; justify-content: flex-end;
     /* height: 500px; */
 }
 #wrap main .Solution .solution_container .right_wrap .text_box {}
+#wrap main .Solution .solution_container.pore .right_wrap .text_box dt {
+    background-color: #704A33;
+}
 #wrap main .Solution .solution_container .right_wrap .text_box dt {
     font-size: 0.94rem; font-weight: 500; background-color: #CD8A91; display: inline-block;
     padding: 2px 10px; color: #fff; margin-bottom: 8px;
@@ -262,26 +272,28 @@
 }
 #wrap main .Solution .solution_container .right_wrap .text_box dd:nth-child(3) {
     font-size: 1.19rem; font-weight: 200; line-height: 1.5; margin-bottom: 6px;
-} 
+}
+#wrap main .Solution .solution_container.pore .right_wrap .text_box dd:nth-child(4) {color: #704A33;}
 #wrap main .Solution .solution_container .right_wrap .text_box dd:nth-child(4) {
     font-size: 1.19rem; font-weight: 500; color: #E46976; margin-bottom: 10px;
 }
 #wrap main .Solution .solution_container .right_wrap .item_box {
     margin-top: 60px; position: relative;
 }
-#wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper {width: 864px;}
+#wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper2,
+#wrap main .Solution .solution_container .right_wrap .item_box .swiper {width: 864px;}
 #wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper .swiper-wrapper {}
 #wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper .swiper-wrapper .swiper-slide {}
 #wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper .swiper-wrapper .swiper-slide a {
     display: inline-block; 
 }
-#wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper .swiper-wrapper .swiper-slide a img {
+#wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a img {
     width: 100%; margin-bottom: 6px;
 }
-#wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper .swiper-wrapper .swiper-slide a h1 {
+#wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a h1 {
     font-size: 1rem; font-weight: 400;
 }
-#wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper .swiper-wrapper .swiper-slide a p {
+#wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a p {
     font-size: 0.75rem; font-weight: 300; color: #515151;
 }
 #wrap main .Solution .solution_container .right_wrap .item_box .prev {
@@ -293,7 +305,9 @@
     right: -40px; top: 40%;
 }
 #wrap main .Solution .solution_container .right_wrap .item_box .prev svg,
-#wrap main .Solution .solution_container .right_wrap .item_box .next svg {transform: scale(0.6); color: #111;}
+#wrap main .Solution .solution_container .right_wrap .item_box .next svg {
+    transform: scale(0.6); color: #111;
+}
 #wrap main .Solution  .show_btn {margin-bottom: 120px;}
 /* ---------------------------------------5. solution End----------------------- */
 
@@ -303,7 +317,9 @@
 /* ---------------------------------------6. video End----------------------- */
 
 /* ---------------------------------------7. inside Start----------------------- */
-#wrap main .inside_hanyul {text-align: center; margin-bottom: 150px;}
+#wrap main .inside_hanyul {
+    text-align: center; margin-bottom: 150px;
+}
 #wrap main .inside_hanyul .title {
     font-size: 2.25rem; font-weight: 300; margin-bottom: 20px;
 }
@@ -320,27 +336,43 @@
 #wrap main .inside_hanyul .bnr_container .inside_wrap .swiper-wrapper {}
 #wrap main .inside_hanyul .bnr_container .inside_wrap .swiper-wrapper .swiper-slide {}
 #wrap main .inside_hanyul .bnr_container .inside_wrap .swiper-wrapper .swiper-slide img {width: 100%;}
-#wrap main .inside_hanyul .bnr_container .prev {left: 120px; transform: scale(-1);}
+#wrap main .inside_hanyul .bnr_container .prev {
+    left: 120px; transform: scale(-1);
+}
 #wrap main .inside_hanyul .bnr_container .next {right: 120px;}
 #wrap main .inside_hanyul .bnr_container .prev svg,
-#wrap main .inside_hanyul .bnr_container .next svg {transform: scale(0.6); color: #111;}
+#wrap main .inside_hanyul .bnr_container .next svg {
+    transform: scale(0.6); color: #111;
+}
 #wrap main .inside_hanyul .bnr_container .swiper-pagination {bottom:-30px;}
 #wrap main .inside_hanyul .bnr_container .swiper-pagination .swiper-pagination-bullet-active {background: #4A4A4A;}
 /* ---------------------------------------7. inside End----------------------- */
 /* ---------------------------------------8. instagram Start----------------------- */
 #wrap main .instagram {text-align: center;}
-#wrap main .instagram .title {font-size: 2.25rem; font-weight: 300; margin-bottom: 27px;}
-#wrap main .instagram p {font-weight: 300; margin-bottom: 12px;}
-#wrap main .instagram > a {font-size: 0.88rem; font-weight: 400; color: #434343; margin-bottom: 50px; display: block;}
-#wrap main .instagram .img_container {display: flex; flex-flow: row nowrap; gap: 5px; margin-bottom: 5px;}
+#wrap main .instagram .title {
+    font-size: 2.25rem; font-weight: 300; margin-bottom: 27px;
+}
+#wrap main .instagram p {
+    font-weight: 300; margin-bottom: 12px;
+}
+#wrap main .instagram > a {
+    font-size: 0.88rem; font-weight: 400; color: #434343; margin-bottom: 50px; display: block;
+}
+#wrap main .instagram .img_container {
+    display: flex; flex-flow: row nowrap; gap: 5px; margin-bottom: 5px;
+}
 #wrap main .instagram .img_container a {
     width:calc(100% / 7);
 }
 #wrap main .instagram .img_container a img {width: 100%;}
 /* ---------------------------------------8. instagram End----------------------- */
 /* ---------------------------------------9. brandstory Strat----------------------- */
-#wrap main .brand_story {text-align: center; padding: 150px 0;}
-#wrap main .brand_story p { font-size: 1.88rem; font-weight: 400; line-height: 1.6; margin-bottom: 45px;}
+#wrap main .brand_story {
+    text-align: center; padding: 150px 0;
+}
+#wrap main .brand_story p {
+    font-size: 1.88rem; font-weight: 400; line-height: 1.6; margin-bottom: 45px;
+}
 #wrap main .brand_story .brand_btn {
     padding: 10px 37px; border: 1px solid #a3a3a3; font-size: 0.88rem; color: #1D1D1D; font-weight: 500;
 }

@@ -1,9 +1,16 @@
 const heroBnr = document.querySelector('.hero_bnr');
 const best = document.querySelector('.best_sellers .best');
 const advertise = document.querySelector('.advertise .advertise_bnr');
+
+// solution 변수 모음
 const solution = document.querySelector('.solution_swiper');
+const solution2 = document.querySelector('.solution_swiper2');
+const solutionPore = document.querySelector('.pore');
+const solutionMoisturizing = document.querySelector('.Moisturizing');
+const solutionTypeBox = document.querySelectorAll('.type_box li a');
+
+
 const inside = document.querySelector('.inside_wrap');
-const solutionTypeBox = document.querySelectorAll('.type_box li');
 
 // 검색창
 const search_wrap = document.querySelector('.search_popup');
@@ -17,7 +24,10 @@ const popupBack = document.querySelector('.search_popup .back');
 const subMenu = document.querySelector('.product_menu');
 const product = document.querySelector('.menu li:nth-child(2)');
 
-console.log(heroBnr,best,advertise,solution,inside,popular,header,search,searchPopup,popupBack,subMenu,product,search_wrap,solutionTypeBox);
+console.log(heroBnr,best,advertise,solution,inside,popular,header,
+    search,searchPopup,popupBack,subMenu,product,search_wrap,solutionTypeBox
+    ,solution2,solutionPore,solutionMoisturizing
+);
 
 // 스와이퍼 관련 js
 
@@ -56,8 +66,18 @@ const solutionSwiper = new Swiper(solution,{
     slidesPerView:3,
     spaceBetween:15,
     navigation:{
-        nextEl:'.Solution .item_box .next',
-        prevEl:'.Solution .item_box .prev',
+        nextEl:'.Solution .pore .item_box .next',
+        prevEl:'.Solution .pore .item_box .prev',
+    },
+    loop:true,
+})
+
+const solutionSwiper2 = new Swiper(solution2,{
+    slidesPerView:3,
+    spaceBetween:15,
+    navigation:{
+        nextEl:'.Solution .Moisturizing .item_box .next',
+        prevEl:'.Solution .Moisturizing .item_box .prev',
     },
     loop:true,
 })
@@ -138,5 +158,24 @@ product.addEventListener('mouseleave',function(e){
 for(let i of solutionTypeBox){
     i.addEventListener('click',function(e){
         e.preventDefault();
+        activeFunc(i);
     })
 }
+function activeFunc(target){ //매번 달라지는 매개변수 이름을 붙이고 target을 리턴으로 부른다.
+    for(let i of solutionTypeBox) i.classList.remove('active'); //모든 카테 타이틀을 i에 담아서 모든 active를 지우겠다.
+    return target.classList.add('active'); // 매개변수에 액티브 클래스를 추가한다.
+}
+
+
+
+// 솔루션 클릭 함수
+solutionTypeBox[1].addEventListener('click',function(){
+    solutionPore.style.display = 'flex';
+    solutionMoisturizing.style.display = 'none';
+})
+
+solutionTypeBox[0].addEventListener('click',function(){
+    solutionPore.style.display = 'none';
+    solutionMoisturizing.style.display = 'flex';
+})
+
