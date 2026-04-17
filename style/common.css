@@ -37,9 +37,7 @@
     position: fixed; width: 100%; z-index: 999;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
-    height: 69px;
-    padding: 0 30px;
- /*    background-color: yellow; */
+    height: 69px; padding: 0 30px;
 }
 #wrap header #gnb {
     display: flex; flex-flow: row nowrap;
@@ -59,6 +57,9 @@
     display: inline-block; 
     margin-right: 30px;
     padding: 30px 0;
+}
+#wrap header #gnb .menu li:hover a {
+    color: #000; transition: 0.3s;
 }
 #wrap header #gnb .menu li:last-child {margin-right: 0;}
 #wrap header #gnb .menu li a {

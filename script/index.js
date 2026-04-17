@@ -60,6 +60,8 @@ const advertiseSwiper = new Swiper(advertise,{
     slidesPerView:2,
     spaceBetween:20,
     centeredSlides:true,
+    autoplay:{delay:2500,},
+    speed:800,
 })
 
 const solutionSwiper = new Swiper(solution,{
@@ -135,6 +137,7 @@ product.addEventListener('mouseenter',function(e){
     subMenu.style.display = 'block';
     header.style.borderBottom = '1px solid #eee';
     header.style.backgroundColor = '#fff';
+    product.style.filter = 'invert(1)';
     header.children[0].children[0].style.filter = 'invert(1)';
     header.children[0].children[1].style.filter = 'invert(1)';
     header.children[2].children[0].style.filter = 'invert(1)';
@@ -147,6 +150,7 @@ product.addEventListener('mouseleave',function(e){
     subMenu.style.display = 'none';
     header.style.backgroundColor = 'transparent';
     header.style.borderBottom = 'none';
+        product.style.filter = 'invert(0)';
     header.children[0].children[0].style.filter = 'invert(0)';
     header.children[0].children[1].style.filter = 'invert(0)';
     header.children[2].children[0].style.filter = 'invert(0)';

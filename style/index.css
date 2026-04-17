@@ -25,7 +25,7 @@
     background-size: cover; background-position: center;
     position: relative;
 }#wrap main .hero_bnr .swiper-wrapper .slide2 {
-    background-image: url(../images/common/hero_bnr1.jpg); height: 100vh; 
+    background-image: url(../images/common/hero_bnr2.jpg); height: 100vh; 
     background-size: cover; background-position: center;
     position: relative;
 }
@@ -71,7 +71,9 @@
     display: flex; flex-flow: column nowrap; text-align: center;
     margin: 0 auto;
 }
-#wrap main .content1 .right_info .text {}
+#wrap main .content1 .right_info .text {
+    position: relative; z-index: 111;
+}
 #wrap main .content1 .right_info .text li {}
 #wrap main .content1 .right_info .text li p {}
 #wrap main .content1 .right_info .text li:nth-child(1) {
@@ -97,13 +99,19 @@
     display: flex; flex-flow: row nowrap; gap: 30px;
 }
 #wrap main .content1 .right_info .item_info .item {}
-#wrap main .content1 .right_info .item_info .item img {width: 100%;}
+#wrap main .content1 .right_info .item_info .item:hover img {
+    scale: 1.07; transition: 0.3s;
+}
+#wrap main .content1 .right_info .item_info .item img {
+    width: 100%; position: relative; z-index: 1;
+}
 #wrap main .content1 .right_info .item_info .item h1 {
-    margin: 6px 0 10px; font-weight: 500; 
+    margin: 6px 0 9px; font-weight: 500;
+    position: relative; z-index: 10;
 }
 #wrap main .content1 .right_info .item_info .item p {
     font-weight: 300; color: #515151;
-    margin-bottom: 66px;
+    margin-bottom: 57px;
 }
 #wrap main .content1 .right_info .buy_btn {
     border: 1px solid #a3a3a3;
@@ -364,6 +372,9 @@
 #wrap main .instagram .img_container a {
     width:calc(100% / 7);
 }
+#wrap main .instagram .img_container a:hover img {
+    scale: 1.04; transition: 0.3s;
+}
 #wrap main .instagram .img_container a img {width: 100%;}
 /* ---------------------------------------8. instagram End----------------------- */
 /* ---------------------------------------9. brandstory Strat----------------------- */
@@ -376,6 +387,7 @@
 #wrap main .brand_story .brand_btn {
     padding: 10px 37px; border: 1px solid #a3a3a3; font-size: 0.88rem; color: #1D1D1D; font-weight: 500;
 }
+#wrap main .brand_story .brand_btn:hover {background-color: #333; transition: 0.25s; color: #fff;}
 /* ---------------------------------------9. brandstory End----------------------- */
 /* =======================================footer start====================== */
 #wrap footer {
