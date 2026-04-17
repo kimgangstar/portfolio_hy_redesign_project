@@ -3,6 +3,7 @@ const best = document.querySelector('.best_sellers .best');
 const advertise = document.querySelector('.advertise .advertise_bnr');
 const solution = document.querySelector('.solution_swiper');
 const inside = document.querySelector('.inside_wrap');
+const solutionTypeBox = document.querySelectorAll('.type_box li');
 
 // 검색창
 const search_wrap = document.querySelector('.search_popup');
@@ -16,7 +17,9 @@ const popupBack = document.querySelector('.search_popup .back');
 const subMenu = document.querySelector('.product_menu');
 const product = document.querySelector('.menu li:nth-child(2)');
 
-console.log(heroBnr,best,advertise,solution,inside,popular,header,search,searchPopup,popupBack,subMenu,product,search_wrap);
+console.log(heroBnr,best,advertise,solution,inside,popular,header,search,searchPopup,popupBack,subMenu,product,search_wrap,solutionTypeBox);
+
+// 스와이퍼 관련 js
 
 const heroSwiper = new Swiper (heroBnr,{
     scrollbar:{
@@ -80,6 +83,8 @@ const popularSwiper = new Swiper(popular,{
     spaceBetween:10,
 })
 
+// 검색창 관련 js
+
 search.addEventListener('click',function(e){
     e.preventDefault();
     search_wrap.style.display = 'flex';
@@ -128,3 +133,10 @@ product.addEventListener('mouseleave',function(e){
     header.children[2].children[1].style.filter = 'invert(0)';
     header.children[2].children[2].style.filter = 'invert(0)';
 })
+
+// 솔루션 type_box a 속성 막는 js
+for(let i of solutionTypeBox){
+    i.addEventListener('click',function(e){
+        e.preventDefault();
+    })
+}
