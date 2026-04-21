@@ -35,8 +35,6 @@ const product = document.querySelector('.menu li'); 이거 다시 잡아야함. 
 
 ## 20260421 
 
-- 반응형 모바일 푸터 dd까지 가림
+- 반응형 모바일 푸터 dd까지 가림 (완료)
 
 - 헤더 모바일버젼 만들어야함.
-
-연결 test 

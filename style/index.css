@@ -424,6 +424,7 @@
     font-size: 0.88rem; color: #fff; font-weight: 500; 
     margin-bottom: 20px; display: block;
 }
+#wrap footer .footer_contents .footer_right .category .title a span {color: #fff; display: none;} 
 #wrap footer .footer_contents .footer_right .category dd a {
     font-size: 0.88rem; font-weight: 300; color: #C3C3C3;
     margin-bottom: 16px; display: block;
