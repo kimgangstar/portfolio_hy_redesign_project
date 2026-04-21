@@ -88,6 +88,11 @@ const solutionSwiper = new Swiper(solution,{
         prevEl:'.Solution .pore .item_box .prev',
     },
     loop:true,
+    breakpoints:{
+        0:{slidesPerView:1,},
+        440:{slidesPerView:1,},
+        1024:{slidesPerView:3,},
+    },
 })
 
 const solutionSwiper2 = new Swiper(solution2,{
@@ -98,6 +103,11 @@ const solutionSwiper2 = new Swiper(solution2,{
         prevEl:'.Solution .Moisturizing .item_box .prev',
     },
     loop:true,
+    breakpoints:{
+        0:{slidesPerView:1,},
+        440:{slidesPerView:1,},
+        1024:{slidesPerView:3,},
+    },
 })
 
 const insideSwiper = new Swiper(inside,{
@@ -110,6 +120,11 @@ const insideSwiper = new Swiper(inside,{
     },
     pagination:{
         el: ".bnr_container .swiper-pagination",
+    },
+    breakpoints:{
+        0:{slidesPerView:2,},
+        440:{slidesPerView:2,},
+        1024:{slidesPerView:4,},
     },
 })
 

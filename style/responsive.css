@@ -44,8 +44,9 @@
     /*================================================================================== 베스트 */
     #wrap main .best_sellers .best {width:100%;}
     /*================================================================================== 솔루션 */
+        #wrap main .Solution .solution_container {flex-flow: column wrap; gap: 0;}
     #wrap main .Solution .solution_container .right_wrap .item_box .swiper {width: 564px;} 
-    #wrap main .Solution .solution_container .left_wrap .left_img {width: 414px; height: 473px;}
+    #wrap main .Solution .solution_container .left_wrap .left_img {width: 100%; height: 300px; }
     #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a h1 {font-size: 0.81rem;}
     #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a p {font-size: 0.71rem;}
 }
@@ -56,18 +57,26 @@
 @media screen and (max-width:1024px) {
     #wrap {background-color: red;}
     /*================================================================================== 히어로배너 */
+    #wrap main .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/common/mobile_herobnr.jpg);}
+    #wrap main .hero_bnr .swiper-wrapper .slide2 {background-image: url(../images/common/mobile_hero_bnr2.jpg);}
+    #wrap main .hero_bnr .bar {bottom: 30px; padding: 0 15px;}
     #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text {
-        position: absolute; left: 50px; top: 150px;
+        position: absolute; text-align: center; left: 50%; top: 120px; transform: translateX(-50%);
     }
-    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text p {
-        font-size: 1.1rem; font-weight: 500;
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text p:first-child {
+        margin-bottom: 0px; font-size: 1.1rem;
+    }
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text p:nth-child(2) {
+        font-size: 1.1rem; font-weight: 500; display: none;
     }
     #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text h1 {
-        font-size: 1.7rem; font-weight: 600;
+        font-size: 1.4rem; font-weight: 600; margin-bottom: 0;
     }
     #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text h2 {
-        font-size: 1.2rem; font-weight: 200;
+        font-size: 1.2rem; font-weight: 200; width: max-content;
     }
+        #wrap main .hero_bnr .swiper-wrapper .slide2 .text > * {color: #618b60;}
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text  .go_shop {display: none;}
     /*================================================================================== 콘텐츠1 */
     #wrap main .content1 {flex-flow: column nowrap;}
     #wrap main .content1 .left_photo {width: 100%; margin-bottom: 20px;}
@@ -75,15 +84,17 @@
     #wrap main .content1 .right_info .text li:nth-child(3) p {font-size: 1.1rem;}
     #wrap main .content1 .right_info .text li:nth-child(4) p {margin-bottom: 20px;}
     #wrap main .content1 .right_info .item_info {gap: 10px; padding: 0 15px;}
-    #wrap main .content1 .right_info .item_info .item h1 {font-size: 0.81rem;}
-    #wrap main .content1 .right_info .item_info .item p {font-size: 0.81rem;}
+    #wrap main .content1 .right_info .item_info .item h1 {font-size: 0.74rem;}
+    #wrap main .content1 .right_info .item_info .item p {font-size: 0.74rem;}
     /*================================================================================== 베스트 */
     #wrap main .best_sellers .best {width:100%;}
     #wrap main .best_sellers h1 {font-size: 1.7rem; padding: 50px 0 0;} /* 제목 사이즈 */
     #wrap main .best_sellers > p {font-size: 0.88rem;}
     #wrap main .best_sellers .best .swiper-wrapper .swiper-slide {padding: 0 5px;}
     #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a h2 {font-size: 0.79rem;}
-    #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a > p {font-size: 0.66rem;}
+    #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a > p {
+        font-size: 0.64rem; text-overflow:ellipsis; width: 140px; overflow: hidden; white-space: nowrap;
+    }
     #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a .price {margin-bottom: 90px;}
     #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a .price li p {font-size: 0.81rem;}
     #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a .price li:nth-child(2) p {font-size: 0.81rem;}
@@ -104,11 +115,51 @@
     #wrap main .Solution p {font-size: 0.88rem;}
     #wrap main .Solution .type_box {flex-flow: row wrap; padding-bottom: 30px; gap: 15px;}
     #wrap main .Solution .type_box li a {font-size: 0.81rem; padding: 8px 15px;}
-    #wrap main .Solution .solution_container {flex-flow: column wrap; gap: 0; padding: 50px 196px 0px; }
-    #wrap main .Solution .solution_container .right_wrap .item_box .swiper {width: 564px;} 
-    #wrap main .Solution .solution_container .left_wrap .left_img {width: 564px; height: 273px;}
+    #wrap main .Solution .solution_container {flex-flow: column wrap; gap: 0;}
+    #wrap main .Solution .solution_container .left_wrap .left_img {width: 100%;}
+    #wrap main .Solution .solution_container .right_wrap .item_box {}
+    #wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper2,
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper {width: 440px;} 
+    #wrap main .Solution .solution_container .left_wrap .left_img {width: 100%; height: 273px;}
     #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a h1 {font-size: 0.81rem;}
     #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a p {font-size: 0.71rem;}
     #wrap main .Solution .solution_container .right_wrap .text_box dd:nth-child(3) {font-size: 1rem;}
     #wrap main .Solution .solution_container .right_wrap .text_box dd:nth-child(4) {font-size: 1rem;}
+    #wrap main .Solution .solution_container {padding: 50px 10px 30px;}
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a h1 {font-size: 1.1rem; margin-top: 10px;}
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a p {font-size: 0.85rem;}
+    #wrap main .Solution .solution_container .right_wrap .item_box .prev {
+        display: block; transform: scale(-1);
+        left: 8px; top: 40%;
+    }
+    #wrap main .Solution .solution_container .right_wrap .item_box .next {
+        display: block;
+        right: 8px; top: 40%;
+    }
+    /*================================================================================== 인사이드 한율*/
+    #wrap main .inside_hanyul .show_btn {transform: translate(180px,40px); display: none;}
+    #wrap main .inside_hanyul .title {font-size: 1.7rem;}
+    #wrap main .inside_hanyul p {font-size: 0.81rem; margin-bottom: 60px;}
+    #wrap main .inside_hanyul .bnr_container .inside_wrap {width: 100%; padding: 0 10px;}
+    #wrap main .inside_hanyul .bnr_container .prev {left: -8px;}
+    #wrap main .inside_hanyul .bnr_container .next {right: -8px;}
+    #wrap main .inside_hanyul .bnr_container .prev svg,
+    #wrap main .inside_hanyul .bnr_container .next svg {color: #fff;}
+    /* #wrap footer {display: none;} */
+    /*================================================================================== 인스타그램 */
+    #wrap main .instagram .title {font-size: 1.7rem;}
+    #wrap main .instagram p { font-size: 0.88rem;}
+    #wrap main .instagram .img_container a:nth-child(5),
+    #wrap main .instagram .img_container a:nth-child(6),
+    #wrap main .instagram .img_container a:nth-child(7) {display: none;}
+    #wrap main .instagram .img_container a {width: calc(100% / 4);}
+    /*================================================================================== 브랜드 스토리 */
+    #wrap main .brand_story p {font-size: 1.3rem;}
+    #wrap main .brand_story .brand_btn {padding: 8px 25px; font-size: 0.81rem;}
+    /*================================================================================== 푸터 */
+    #wrap footer {padding: 47px 30px 97px;}
+    #wrap .footer_left {display: none;}
+    #wrap footer .footer_contents .footer_right {flex-flow: column nowrap;text-align: start;}
+    #wrap footer .footer_contents .footer_right dd {display: none;}
 }
+
