@@ -65,7 +65,9 @@
     padding: 100px 0;
     display: flex; flex-flow: row nowrap;
 }
-#wrap main .content1 .left_photo {width: 890px;}
+#wrap main .content1 .left_photo {
+    width: 890px; position: relative; z-index: 2;
+}
 #wrap main .content1 .left_photo img {width: 100%;}
 #wrap main .content1 .right_info {
     display: flex; flex-flow: column nowrap; text-align: center;
@@ -289,7 +291,7 @@
     margin-top: 60px; position: relative;
 }
 #wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper2,
-#wrap main .Solution .solution_container .right_wrap .item_box .swiper {width: 864px;}
+#wrap main .Solution .solution_container .right_wrap .item_box .swiper {width: 864px;} 
 #wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper .swiper-wrapper {}
 #wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper .swiper-wrapper .swiper-slide {}
 #wrap main .Solution .solution_container .right_wrap .item_box .solution_swiper .swiper-wrapper .swiper-slide a {

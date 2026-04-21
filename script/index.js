@@ -2,6 +2,7 @@ const heroBnr = document.querySelector('.hero_bnr');
 const best = document.querySelector('.best_sellers .best');
 const advertise = document.querySelector('.advertise .advertise_bnr');
 
+
 // solution 변수 모음
 const solution = document.querySelector('.solution_swiper');
 const solution2 = document.querySelector('.solution_swiper2');
@@ -30,7 +31,6 @@ console.log(heroBnr,best,advertise,solution,inside,popular,header,
 );
 
 // 스와이퍼 관련 js
-
 const heroSwiper = new Swiper (heroBnr,{
     scrollbar:{
         el:'.hero_bnr .bar',
@@ -44,6 +44,7 @@ const heroSwiper = new Swiper (heroBnr,{
 })
 
 const bestSwiper = new Swiper(best,{
+    loop:true,
     slidesPerView:5,
     spaceBetween:20,
     navigation:{
@@ -53,6 +54,15 @@ const bestSwiper = new Swiper(best,{
     scrollbar:{
         el:'.best_sellers .bar',
     },
+    breakpoints:{
+        0: {slidesPerView:1,}, //모바일
+        440: {
+            slidesPerView:3,
+            spaceBetween:10,
+        }, //테블릿
+        768: {slidesPerView:3,}, //테블릿
+        1024: {slidesPerView:5,}, //pc
+    }
 })
 
 const advertiseSwiper = new Swiper(advertise,{
@@ -62,6 +72,12 @@ const advertiseSwiper = new Swiper(advertise,{
     centeredSlides:true,
     autoplay:{delay:2500,},
     speed:800,
+    breakpoints:{
+        0:{slidesPerView:1,},
+        440:{slidesPerView:1,},
+        768:{slidesPerView:1.5,},
+        1024:{slidesPerView:2,},
+    },
 })
 
 const solutionSwiper = new Swiper(solution,{
@@ -106,7 +122,6 @@ const popularSwiper = new Swiper(popular,{
 })
 
 // 검색창 관련 js
-
 search.addEventListener('click',function(e){
     e.preventDefault();
     search_wrap.style.display = 'flex';
@@ -131,6 +146,7 @@ popupBack.addEventListener('click',function(e){
     header.children[2].children[2].style.filter = 'invert(0)';
 })
 
+// popup 관련 함수
 product.addEventListener('mouseenter',function(e){
     e.preventDefault();
     search_wrap.style.display = 'none';
@@ -158,6 +174,7 @@ product.addEventListener('mouseleave',function(e){
     header.children[2].children[2].style.filter = 'invert(0)';
 })
 
+
 // 솔루션 type_box a 속성 막는 js
 for(let i of solutionTypeBox){
     i.addEventListener('click',function(e){
@@ -170,8 +187,6 @@ function activeFunc(target){ //매번 달라지는 매개변수 이름을 붙이
     return target.classList.add('active'); // 매개변수에 액티브 클래스를 추가한다.
 }
 
-
-
 // 솔루션 클릭 함수
 solutionTypeBox[1].addEventListener('click',function(){
     solutionPore.style.display = 'flex';
@@ -183,3 +198,10 @@ solutionTypeBox[0].addEventListener('click',function(){
     solutionMoisturizing.style.display = 'flex';
 })
 
+// header sticky 함수 (scroll 사용)
+window.addEventListener('scroll',function(){
+    if(window.scrollY >= 200){
+        header.classList.add('scroll');
+    }
+    else{header.classList.remove('scroll');}
+});

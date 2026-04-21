@@ -39,6 +39,9 @@
     justify-content: space-between; align-items: center;
     height: 69px; padding: 0 30px;
 }
+#wrap header.scroll {
+    background: rgba(0,0,0,0.1); transition: 0.3s;
+}
 #wrap header #gnb {
     display: flex; flex-flow: row nowrap;
     justify-content: center; align-items: center;

@@ -1,0 +1,114 @@
+@media screen and (max-width:1680px) {
+    #wrap {background-color: yellowgreen;}
+    /* 히어로배너 */
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text {
+        position: absolute; left: 50px; top: 150px;
+    }
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text p {
+        font-size: 1.3rem; font-weight: 500;
+    }
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text h1 {
+        font-size: 2.3rem; font-weight: 600;
+    }
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text h2 {
+        font-size: 2.1rem; font-weight: 200;
+    }
+    /*================================================================================== 솔루션 */
+    #wrap main .Solution .solution_container .left_wrap .left_img {
+        width: 614px; height: 573px; overflow: hidden; 
+        border-radius: 1px;
+    }
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper {width: 664px;} 
+    #wrap main .Solution .solution_container .left_wrap .left_img {width: 514px; height: 513px;}
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a h1 {font-size: 0.91rem;}
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a p {font-size: 0.78rem;}
+}
+
+
+
+
+@media screen and (max-width:1440px) {
+    #wrap {background-color: yellow;}
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text {
+        position: absolute; left: 50px; top: 150px;
+    }
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text p {
+        font-size: 1.2rem; font-weight: 500;
+    }
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text h1 {
+        font-size: 2.0rem; font-weight: 600;
+    }
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text h2 {
+        font-size: 1.7rem; font-weight: 200;
+    }
+    /*================================================================================== 베스트 */
+    #wrap main .best_sellers .best {width:100%;}
+    /*================================================================================== 솔루션 */
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper {width: 564px;} 
+    #wrap main .Solution .solution_container .left_wrap .left_img {width: 414px; height: 473px;}
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a h1 {font-size: 0.81rem;}
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a p {font-size: 0.71rem;}
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+    #wrap {background-color: red;}
+    /*================================================================================== 히어로배너 */
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text {
+        position: absolute; left: 50px; top: 150px;
+    }
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text p {
+        font-size: 1.1rem; font-weight: 500;
+    }
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text h1 {
+        font-size: 1.7rem; font-weight: 600;
+    }
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text h2 {
+        font-size: 1.2rem; font-weight: 200;
+    }
+    /*================================================================================== 콘텐츠1 */
+    #wrap main .content1 {flex-flow: column nowrap;}
+    #wrap main .content1 .left_photo {width: 100%; margin-bottom: 20px;}
+    #wrap main .content1 .right_info .text li:nth-child(2) p {font-size: 1.4rem;}
+    #wrap main .content1 .right_info .text li:nth-child(3) p {font-size: 1.1rem;}
+    #wrap main .content1 .right_info .text li:nth-child(4) p {margin-bottom: 20px;}
+    #wrap main .content1 .right_info .item_info {gap: 10px; padding: 0 15px;}
+    #wrap main .content1 .right_info .item_info .item h1 {font-size: 0.81rem;}
+    #wrap main .content1 .right_info .item_info .item p {font-size: 0.81rem;}
+    /*================================================================================== 베스트 */
+    #wrap main .best_sellers .best {width:100%;}
+    #wrap main .best_sellers h1 {font-size: 1.7rem; padding: 50px 0 0;} /* 제목 사이즈 */
+    #wrap main .best_sellers > p {font-size: 0.88rem;}
+    #wrap main .best_sellers .best .swiper-wrapper .swiper-slide {padding: 0 5px;}
+    #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a h2 {font-size: 0.79rem;}
+    #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a > p {font-size: 0.66rem;}
+    #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a .price {margin-bottom: 90px;}
+    #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a .price li p {font-size: 0.81rem;}
+    #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a .price li:nth-child(2) p {font-size: 0.81rem;}
+    #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a .price li:nth-child(3) p {font-size: 0.78rem;}
+    #wrap main .best_sellers .bar {width: 300px;}
+    #wrap main .best_sellers .prev,
+    #wrap main .best_sellers .next {transform: scale(0.45); top: 45%;}
+    #wrap main .best_sellers .prev {left: -10px;}
+    #wrap main .best_sellers .next {right: -10px;}
+      /*================================================================================== 광고 */
+    #wrap main .advertise .advertise_bnr .swiper-wrapper .swiper-slide {}
+    #wrap main .advertise .advertise_bnr .swiper-wrapper .swiper-slide .text_box {padding: 88px 47px 0;}
+    #wrap main .advertise .advertise_bnr .swiper-wrapper .swiper-slide .text_box li h1 {font-size: 1.3rem;}
+    #wrap main .advertise .advertise_bnr .swiper-wrapper .swiper-slide .text_box li:nth-child(4) p {font-size: 0.91rem;}
+    #wrap main .advertise .advertise_bnr .swiper-wrapper .swiper-slide .text_box .more_btn {font-size: 0.81rem; padding: 6px 10px;}
+    /*================================================================================== 솔루션 */
+    #wrap main .Solution h1 {font-size: 1.7rem;}
+    #wrap main .Solution p {font-size: 0.88rem;}
+    #wrap main .Solution .type_box {flex-flow: row wrap; padding-bottom: 30px; gap: 15px;}
+    #wrap main .Solution .type_box li a {font-size: 0.81rem; padding: 8px 15px;}
+    #wrap main .Solution .solution_container {flex-flow: column wrap; gap: 0; padding: 50px 196px 0px; }
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper {width: 564px;} 
+    #wrap main .Solution .solution_container .left_wrap .left_img {width: 564px; height: 273px;}
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a h1 {font-size: 0.81rem;}
+    #wrap main .Solution .solution_container .right_wrap .item_box .swiper .swiper-wrapper .swiper-slide a p {font-size: 0.71rem;}
+    #wrap main .Solution .solution_container .right_wrap .text_box dd:nth-child(3) {font-size: 1rem;}
+    #wrap main .Solution .solution_container .right_wrap .text_box dd:nth-child(4) {font-size: 1rem;}
+}
