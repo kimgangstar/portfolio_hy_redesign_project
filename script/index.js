@@ -2,6 +2,12 @@ const heroBnr = document.querySelector('.hero_bnr');
 const best = document.querySelector('.best_sellers .best');
 const advertise = document.querySelector('.advertise .advertise_bnr');
 
+// 모바일 변수
+const m_categoryIcon = document.querySelector('.m_side_menu');
+const m_side_menu = document.querySelector('.m_bg');
+const m_back = document.querySelector('.m_bg .m_back');
+
+m_side_menu.style.display = 'none';
 
 // solution 변수 모음
 const solution = document.querySelector('.solution_swiper');
@@ -30,7 +36,8 @@ const category1 = document.querySelector('.footer_right .category1 .title');
 
 console.log(heroBnr,best,advertise,solution,inside,popular,header,
     search,searchPopup,popupBack,subMenu,product,search_wrap,solutionTypeBox
-    ,solution2,solutionPore,solutionMoisturizing,category1
+    ,solution2,solutionPore,solutionMoisturizing,category1,m_categoryIcon,m_side_menu
+    ,m_back
 );
 
 // 스와이퍼 관련 js
@@ -145,11 +152,11 @@ search.addEventListener('click',function(e){
     search_wrap.style.display = 'flex';
     header.style.borderBottom = '1px solid #eee';
     header.style.backgroundColor = '#fff';
-    header.children[0].children[0].style.filter = 'invert(1)';
-    header.children[0].children[1].style.filter = 'invert(1)';
     header.children[2].children[0].style.filter = 'invert(1)';
     header.children[2].children[1].style.filter = 'invert(1)';
-    header.children[2].children[2].style.filter = 'invert(1)';
+    header.children[4].children[0].style.filter = 'invert(1)';
+    header.children[4].children[1].style.filter = 'invert(1)';
+    header.children[4].children[2].style.filter = 'invert(1)';
 })
 
 popupBack.addEventListener('click',function(e){
@@ -157,11 +164,11 @@ popupBack.addEventListener('click',function(e){
     header.style.borderBottom = 'none';
     search_wrap.style.display = 'none';
     header.style.backgroundColor = 'transparent';
-    header.children[0].children[0].style.filter = 'invert(0)';
-    header.children[0].children[1].style.filter = 'invert(0)';
     header.children[2].children[0].style.filter = 'invert(0)';
     header.children[2].children[1].style.filter = 'invert(0)';
-    header.children[2].children[2].style.filter = 'invert(0)';
+    header.children[4].children[0].style.filter = 'invert(0)';
+    header.children[4].children[1].style.filter = 'invert(0)';
+    header.children[4].children[2].style.filter = 'invert(0)';
 })
 
 // popup 관련 함수
@@ -172,11 +179,11 @@ product.addEventListener('mouseenter',function(e){
     header.style.borderBottom = '1px solid #eee';
     header.style.backgroundColor = '#fff';
     product.style.filter = 'invert(1)';
-    header.children[0].children[0].style.filter = 'invert(1)';
-    header.children[0].children[1].style.filter = 'invert(1)';
     header.children[2].children[0].style.filter = 'invert(1)';
     header.children[2].children[1].style.filter = 'invert(1)';
-    header.children[2].children[2].style.filter = 'invert(1)';
+    header.children[4].children[0].style.filter = 'invert(1)';
+    header.children[4].children[1].style.filter = 'invert(1)';
+    header.children[4].children[2].style.filter = 'invert(1)';
 })
 
 product.addEventListener('mouseleave',function(e){
@@ -185,11 +192,11 @@ product.addEventListener('mouseleave',function(e){
     header.style.backgroundColor = 'transparent';
     header.style.borderBottom = 'none';
         product.style.filter = 'invert(0)';
-    header.children[0].children[0].style.filter = 'invert(0)';
-    header.children[0].children[1].style.filter = 'invert(0)';
     header.children[2].children[0].style.filter = 'invert(0)';
     header.children[2].children[1].style.filter = 'invert(0)';
-    header.children[2].children[2].style.filter = 'invert(0)';
+    header.children[4].children[0].style.filter = 'invert(0)';
+    header.children[4].children[1].style.filter = 'invert(0)';
+    header.children[4].children[2].style.filter = 'invert(0)';
 })
 
 
@@ -225,3 +232,14 @@ window.addEventListener('scroll',function(){
 });
 
 // footer 함수
+
+
+//모바일 함수
+m_categoryIcon.addEventListener('click',function(){
+    m_side_menu.style.display = 'block';
+    
+});
+
+m_back.addEventListener('click',function(){
+    m_side_menu.style.display = 'none';
+})

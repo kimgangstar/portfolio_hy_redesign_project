@@ -39,6 +39,42 @@
     justify-content: space-between; align-items: center;
     height: 69px; padding: 0 30px;
 }
+/*  =================================모바일 헤더 ===================================== */
+#wrap header .m_side_menu {display: none;}
+#wrap header .m_side_menu img {width: 100%;}
+#wrap header .m_bg {
+   /*  display: none; */
+    position: fixed; left: 0; top: 0; width: 100%; height: 100vh;
+    background-color: #fff; padding: 0 15px;
+}
+#wrap header .m_bg .m_side_wrap {height: 100vh; max-width: 450px;}
+#wrap header .m_bg .m_side_wrap .top {
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-between; 
+}
+#wrap header .m_bg .m_side_wrap .top .m_logo {}
+#wrap header .m_bg .m_side_wrap .top .m_logo a {width: 143px; display: inline-block;}
+#wrap header .m_bg .m_side_wrap .top .m_logo a img {width: 100%;}
+#wrap header .m_bg .m_side_wrap .top .m_back {width: 30px;}
+#wrap header .m_bg .m_side_wrap .top .m_back img {width: 100%;}
+#wrap header .m_bg .m_side_wrap .m_gnb {padding: 0 5px; margin-bottom: 30px;}
+#wrap header .m_bg .m_side_wrap .m_gnb li {padding: 10px 0;}
+#wrap header .m_bg .m_side_wrap .m_gnb li a {font-size: 1.44rem; font-weight: 400;}
+#wrap header .m_bg .m_side_wrap .another_menu {
+    padding: 0 5px; display: flex; flex-flow: column nowrap; gap: 13px;
+    margin-bottom: 60px;
+}
+#wrap header .m_bg .m_side_wrap .another_menu li {}
+#wrap header .m_bg .m_side_wrap .another_menu li a {font-size: 0.88rem;}
+#wrap header .m_bg .m_side_wrap .interest_item_menu {padding: 0 5px;}
+#wrap header .m_bg .m_side_wrap .interest_item_menu > p {font-weight: 600; font-size: 0.88rem;}
+#wrap header .m_bg .m_side_wrap .interest_item_menu .item_list {padding: 40px 0;}
+#wrap header .m_bg .m_side_wrap .interest_item_menu .item_list > p {font-size: 0.81rem; color: #949191;}
+#wrap header .m_bg .m_side_wrap > p {
+    font-size: 0.61rem; text-align: center; position: relative; bottom: -105px; 
+}
+/*  =================================모바일 헤더 끝===================================== */
+
 #wrap header.scroll {
     background: rgba(0,0,0,0.1); transition: 0.3s;
 }

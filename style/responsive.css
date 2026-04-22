@@ -80,6 +80,12 @@
 
 @media screen and (max-width:1024px) {
     #wrap {}
+    /*================================================================================== 헤더 */
+    #wrap header .m_side_menu {display: inline-block;}
+    #wrap header #gnb .menu li {display: none;}
+    #wrap header .function a:nth-child(1) {width: 27px;}
+    #wrap header .function a:nth-child(2) {display: none;}
+    #wrap header .function a:nth-child(3) {display: none;}
     /*================================================================================== 히어로배너 */
     #wrap main .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/common/mobile_herobnr.jpg);}
     #wrap main .hero_bnr .swiper-wrapper .slide2 {background-image: url(../images/common/mobile_hero_bnr2.jpg);}
@@ -125,7 +131,7 @@
     #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a .price li:nth-child(3) p {font-size: 0.78rem;}
     #wrap main .best_sellers .bar {width: 300px;}
     #wrap main .best_sellers .prev,
-    #wrap main .best_sellers .next {transform: scale(0.45); top: 45%;}
+    #wrap main .best_sellers .next {transform: scale(0.45); top: 49%;}
     #wrap main .best_sellers .prev {left: -10px;}
     #wrap main .best_sellers .next {right: -10px;}
       /*================================================================================== 광고 */
