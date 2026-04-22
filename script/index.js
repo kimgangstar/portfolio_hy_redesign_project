@@ -25,9 +25,12 @@ const popupBack = document.querySelector('.search_popup .back');
 const subMenu = document.querySelector('.product_menu');
 const product = document.querySelector('.menu li:nth-child(2)');
 
+// footer 변수
+const category1 = document.querySelector('.footer_right .category1 .title');
+
 console.log(heroBnr,best,advertise,solution,inside,popular,header,
     search,searchPopup,popupBack,subMenu,product,search_wrap,solutionTypeBox
-    ,solution2,solutionPore,solutionMoisturizing
+    ,solution2,solutionPore,solutionMoisturizing,category1
 );
 
 // 스와이퍼 관련 js
@@ -220,3 +223,5 @@ window.addEventListener('scroll',function(){
     }
     else{header.classList.remove('scroll');}
 });
+
+// footer 함수

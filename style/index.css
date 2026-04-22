@@ -133,7 +133,7 @@
     margin-bottom: 49px;
     font-weight: 300; text-align: center;
 }
-#wrap main .best_sellers .best {width:1820px;}
+#wrap main .best_sellers .best {width:100%;}
 #wrap main .best_sellers .best .swiper-wrapper {}
 #wrap main .best_sellers .best .swiper-wrapper .swiper-slide {}
 #wrap main .best_sellers .best .swiper-wrapper .swiper-slide a {}
@@ -339,9 +339,9 @@
 #wrap main .inside_hanyul .show_btn {
     margin-bottom: 60px; transform: translateX(730px);
 }
-#wrap main .inside_hanyul .bnr_container {position: relative;}
+#wrap main .inside_hanyul .bnr_container {position: relative; width: 100%; padding: 0 188px;}
 #wrap main .inside_hanyul .bnr_container .inside_wrap {
-    width: 1529px;
+    width: 100%;
 }
 #wrap main .inside_hanyul .bnr_container .inside_wrap .swiper-wrapper {}
 #wrap main .inside_hanyul .bnr_container .inside_wrap .swiper-wrapper .swiper-slide {}
@@ -424,6 +424,7 @@
     font-size: 0.88rem; color: #fff; font-weight: 500; 
     margin-bottom: 20px; display: block;
 }
+#wrap footer .footer_contents .footer_right .category .title a span {color: #fff; display: none;} 
 #wrap footer .footer_contents .footer_right .category dd a {
     font-size: 0.88rem; font-weight: 300; color: #C3C3C3;
     margin-bottom: 16px; display: block;
