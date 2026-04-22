@@ -1,5 +1,5 @@
 @media screen and (max-width:1680px) {
-    #wrap {background-color: yellowgreen;}
+    #wrap {/* background-color: yellowgreen; */}
     /* 히어로배너 */
     #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text {
         position: absolute; left: 50px; top: 150px;
@@ -28,7 +28,7 @@
 
 
 @media screen and (max-width:1440px) {
-    #wrap {background-color: yellow;}
+    #wrap {/* background-color: yellow; */}
     #wrap main .hero_bnr .swiper-wrapper .swiper-slide .text {
         position: absolute; left: 50px; top: 150px;
     }
@@ -55,7 +55,7 @@
 
 
 @media screen and (max-width:1024px) {
-    #wrap {background-color: red;}
+    #wrap {/* background-color: red; */}
     /*================================================================================== 히어로배너 */
     #wrap main .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/common/mobile_herobnr.jpg);}
     #wrap main .hero_bnr .swiper-wrapper .slide2 {background-image: url(../images/common/mobile_hero_bnr2.jpg);}
