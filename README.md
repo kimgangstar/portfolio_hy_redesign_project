@@ -1,3 +1,6 @@
+**"This is a portfolio project for educational purposes."**
+* 이것은 교육 목적의 포트폴리오 프로젝트입니다.
+
 ## 20260327 
 solution type box css까지 완료
 다음 할 일은 밑에부터 html 작성하기.
